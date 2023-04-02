@@ -72,4 +72,29 @@ Read this in other languages: **to do Russian**
  |_ 📁 services  <br />
     $\space\space\space\space\space$  |_  $\space$ file_handling.py   <br />
 </details> 
-
+  
+## Description of the bot structure
+<details>   
+ <summary>clik here </summary>  
+📁 diagnostic_bot - the root directory of the entire project <br />
+bot.py - the main executable file
+.env - the file with environment variables (secret data) for the bot configuration
+.env.example - the file with examples of secrets for GitHub
+.gitignore - which files and directories not to track
+📁 config_data - directory with the bot configuration module
+config.py - module for bot configuration
+📁 database - the package for working with a database
+database.py - the module with a template of our "toy" database
+📁 filters - the package with filters
+filters.py - the module with filters 
+📁 handlers - the package with handlers
+other_handlers.py - the module with a handler for any user messages
+user_handlers.py -  the module with user handlers
+📁 keyboards - the package with bot keyboards
+main_menu.py - the module for forming the main menu of the bot
+keyboards.py - the module for forming another keyboards
+📁 lexicon - the directory for storing bot dictionaries
+lexicon_en.py - the file with a dictionary
+📁 services - a package with auxiliary tools for the work of the bot
+file_handling.py - a module for preparing data
+</details> 

@@ -98,3 +98,7 @@ lexicon_en.py - the file with a dictionary  <br />
 📁 services - a package with auxiliary tools for the work of the bot  <br />
 file_handling.py - a module for preparing data  <br />
 </details> 
+
+## How to install and enable this bot?
+    
+- to do...........

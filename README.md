@@ -3,6 +3,8 @@ The bot generates a list of probable diagnoses
 # !!! WARNING !!!
 **You can use the results of this bot only for educational purposes.**   
 **The diagnoses and prescriptions that this bot makes are not medical diagnoses and not medical prescriptions.**
+   
+Read this in other languages: **to do Russian**
   
 ## What can this bot do ?
   
@@ -40,29 +42,33 @@ The bot generates a list of probable diagnoses
   
 <details>    
  <summary>clik here </summary>  
-📁 predicting_the_disease_by_symptoms    <br />
+📁 diagnostic_bot    <br />
  |_ $\space$ bot.py  <br />
  |_ $\space$ .env  <br />
  |_ $\space$ .env.example  <br />
  |_ $\space$ .gitignore  <br />
- |_  📁 data  <br />
- | $\space\space\space$  |_ $\space$ book.txt  <br />
  |_ 📁 config_data  <br />
- | $\space\space\space$   |_ $\space$config.py  <br />
+ | $\space\space\space$   |_ $\space$ config.py  <br />
+ |_  📁 data  <br />
+ | $\space\space\space$  |_ $\space$ my_symptom_Description.csv  <br />
+ | $\space\space\space$  |_ $\space$ my_symptom_precaution.csv <br />
+ | $\space\space\space$  |_ $\space$ my_symptoms_of_diseases.csv  <br />
+ | $\space\space\space$  |_ $\space$ my_symptom_Description.csv  <br />
+ |  $\space\space\space$  |_ $\space$ model   <br />
  |_ 📁 database  <br />
  |  $\space\space\space$  |_ $\space$ users_database.py   <br />
- |  $\space\space\space$  |_ $\space$ model_    <br />
  |_ 📁 filters  <br />
  |   $\space\space\space$ |_ $\space$ filters.py  <br />
- |_ 📁 handlers  
+ |_ 📁 functions  <br />
+ |   $\space\space\space$ |_ $\space$ handlers_funcsions.py  <br />
+ |_ 📁 handlers  <br />
  |  $\space\space\space$  |_ $\space$ other_handlers.py  <br />
  |  $\space\space\space$  |_ $\space$ user_handlers.py  <br />
  |_ 📁 keyboards  <br />
- |   $\space\space\space$ |_  $\space$ bookmarks_kb.py  <br />
  |   $\space\space\space$ |_  $\space$ main_menu.py  <br />
- |   $\space\space\space$ |_  $\space$ pagination_kb.py  <br />
+ |   $\space\space\space$ |_  $\space$ keyboards.py  <br />
  |_ 📁 lexicon  <br />
- |  $\space\space$$\space$  |_  $\space$ lexicon.py  <br />
+ |  $\space\space\space$  |_  $\space$ lexicon_en.py  <br />
  |_ 📁 services  <br />
     $\space\space\space\space\space$  |_  $\space$ file_handling.py   <br />
 </details> 

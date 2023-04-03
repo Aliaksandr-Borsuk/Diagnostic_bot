@@ -35,7 +35,7 @@ def create_symptoms_keyboard(*args: str) -> InlineKeyboardMarkup:
 
 
 # Создаем объект инлайн-клавиатуры к сообщению с диагнозами
-def create_diagnosis_keyboard(*args: list [list[str]]) -> InlineKeyboardMarkup:
+def create_diagnosis_keyboard(*args: list[list[str]]) -> InlineKeyboardMarkup:
     # Создаем объект клавиатуры
     kb_builder: InlineKeyboardBuilder = InlineKeyboardBuilder()
 
@@ -57,23 +57,3 @@ def create_diagnosis_keyboard(*args: list [list[str]]) -> InlineKeyboardMarkup:
                 ),
         )
     return kb_builder.as_markup()
-
-
-
-
-########################для оценки не нужна теперь
-# def edit_assessment_keyboard() -> InlineKeyboardMarkup:
-#     # Создаем объект клавиатуры
-#     kb_builder: InlineKeyboardBuilder = InlineKeyboardBuilder()
-
-#     buttons = [InlineKeyboardButton(
-#         text=f"{i}",
-#         callback_data=f'score_{i}') for i in range(6)]
-#     # Распаковываем список с кнопками в билдер методом row c параметром width
-#     kb_builder.row(*buttons, width=6)
-#     # Добавляем в клавиатуру в конце кнопку "get_diagnosis"
-#     kb_builder.row(InlineKeyboardButton(
-#         text='Return to choose symptoms, ',
-#         callback_data='return_to_symptoms'))
-
-#     return kb_builder.as_markup()

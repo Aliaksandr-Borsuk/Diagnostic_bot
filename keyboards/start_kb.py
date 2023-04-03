@@ -7,10 +7,7 @@ from lexicon.lexicon_en import LEXICON
 big_button_1: InlineKeyboardButton = InlineKeyboardButton(
     text='Start of diagnostics',
     callback_data='go_diagnostic')
-# ################### кнопка не используется
-# big_button_2: InlineKeyboardButton = InlineKeyboardButton(
-#     text='Вы можете оценить этого бота .',
-#     callback_data='assessment')
+
 
 # Создаем объект инлайн-клавиатуры
 start_kb: InlineKeyboardMarkup = InlineKeyboardMarkup(
@@ -40,16 +37,6 @@ button_repeat_diagnostic: InlineKeyboardButton = InlineKeyboardButton(
     text=LEXICON['repeat_diagnostic'],
     callback_data='repeat_diagnostic')
 
-# button_show_another_diagnosis: InlineKeyboardButton = InlineKeyboardButton(
-#     text=LEXICON['alternative_diagnoses'],
-#     callback_data='alternative_diagnoses')
-
-
-# # Создаем объект инлайн-клавиатуры к сообщению с альтернативными диагнозами
-# edit_alternative_diagnoses_kb: InlineKeyboardMarkup = InlineKeyboardMarkup(
-#     inline_keyboard=[[button_return_skb],
-#                      [button_repeat_diagnostic]])
-
 
 # Создаем объекты кнопок
 bottom_button_1: KeyboardButton = KeyboardButton(text='/run_diagnostics')
@@ -61,3 +48,5 @@ bottom_keyboard: ReplyKeyboardMarkup = ReplyKeyboardMarkup(
                                     resize_keyboard=True,
                                     one_time_keyboard=True
                                     )
+
+
